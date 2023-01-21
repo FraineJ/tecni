@@ -1,0 +1,42 @@
+<div class="course-info-container bd-container">
+
+  <div class="course-info">
+    <div class="img-course">
+      <img src="https://1.bp.blogspot.com/-JiEXPfxUOzs/X48efBhKjuI/AAAAAAAAMY4/TwQbbj9DlrYABq6Jz3-_11Jh1tuIrvpngCLcBGAsYHQ/s950/ciencias-naturales-curso-gratis.jpg" width="100%" style="border-radius: 10px;">
+    </div>
+
+    <h1 class="course-info-title">Curso de informática</h1>
+    <p-rating [stars]="5" [readonly]="true"></p-rating>
+    <p class="my-4">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the
+      visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+      placeholder before final copy is available. It is also used to temporarily replace text in a process called
+      greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text
+      influencing the design.</p>
+
+    <div class="container-banner-user">
+      <div class="flex flex-row">
+        <img class="logox1"
+          src="https://images.ecestaticos.com/XpHlnlxZu162wj1Gpt87N8xcW8o=/0x16:987x534/600x315/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F62c%2Fe5d%2F314%2F62ce5d3141c0b670144a692b7f6a21fa.jpg">
+        <div class="container-name-user">
+          <a class="name-user">Nombre de usuario</a>
+          <label class="profetion-user">Ingeniero en sistema</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-row mt-3">
+      <div class="option-course">
+        <i class="pi pi-clock m-auto"></i>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="temari">
+      <app-list-video
+      [data]="data"
+      (currentItem)="getCurrentData($event)"
+    ></app-list-video>
+  </div>
+
+</div>

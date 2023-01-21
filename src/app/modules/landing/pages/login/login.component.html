@@ -1,0 +1,48 @@
+
+<div class="container-login">
+  <div class="surface-card p-6 shadow-2 my-border-round w-full lg:w-4  m-auto">
+    <div class="text-center my-6">
+        <img src="../../../../../assets/img/logo.png" alt="Image" height="50" class="mb-3">
+        <div class="text-900 text-3xl font-medium mb-3">Welcome Back</div>
+        <span class="text-600 font-medium line-height-3">Don't have an account?</span>
+        <a class="font-medium no-underline ml-2 text-blue-500 cursor-pointer" [routerLink]="'/register'">Create today!</a>
+    </div>
+
+    <div class="mb-4">
+      <form [formGroup]="loginDataForm">
+        <label for="email1" class="block text-900 font-medium mb-2">Email</label>
+        <input id="email1" type="text" pInputText class="w-full  mb-3"    formControlName="email"
+          [ngClass]="{'ng-invalid ng-dirty': loginDataForm.controls.email.invalid &&
+              (loginDataForm.controls.email.dirty ||
+              loginDataForm.controls.email.touched),
+              'is-valid': loginDataForm.controls.email.valid}"
+        >
+        <small *ngIf="loginDataForm.controls.email.invalid &&
+        (loginDataForm.controls.email.dirty || loginDataForm.controls.email.touched)" class="text-input-valid">Introduzca una dirección de de correo o un número de teléfono</small>
+
+        <label for="password1" class="block text-900 font-medium mb-2">Password</label>
+        <span class="p-input-icon-right w-full">
+          <i [class]="showPassword ? 'pi pi-eye-slash icon-password' : 'pi pi-eye icon-password' " (click)="viewPassword()"></i>
+          <input id="password1" [type]="showPassword ? 'password' : 'text'" pInputText class="w-full mb-3" formControlName="password"
+          [ngClass]="{'ng-invalid ng-dirty': loginDataForm.controls.password.invalid &&
+              (loginDataForm.controls.password.dirty ||
+              loginDataForm.controls.password.touched),
+              'is-valid': loginDataForm.controls.password.valid}">
+        </span>
+
+        <div class="flex align-items-center justify-content-between mb-6">
+            <div class="flex align-items-center">
+                <p-checkbox id="rememberme1" [binary]="true" styleClass="mr-2"></p-checkbox>
+                <label for="rememberme1" class="text-900">Remember me</label>
+            </div>
+            <a class="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">Forgot password?</a>
+        </div>
+
+        <div class="my-3">
+          <button pButton pRipple label="Sign In"  class="w-full button-General" (click)="validateForm(loginDataForm)"></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+

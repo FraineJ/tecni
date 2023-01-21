@@ -1,0 +1,200 @@
+.container-banner-course {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 660px;
+  background-color: #192229;
+  .banner-course-text{
+    padding: 50px;
+    width: 50%;
+    margin: auto;
+    .banner-text-one {
+      color: #fff;
+      font-size: 2.5rem;
+      font-family: 'roboto';
+      font-weight: 500;
+    }
+
+    .banner-text-tow {
+      color: #62b7f4;
+      font-size: 2.5rem;
+      font-family: 'roboto';
+      font-weight: 500;
+    }
+
+    .banner-course__description {
+      width: auto;
+      padding: 20px 0px;
+      .banner-description {
+        line-height: 30px;
+        font-size: 17px;
+        color: #99caed;
+      }
+    }
+  }
+
+
+  .banner-course-image {
+    width: 50%;
+    z-index: 99;
+    padding: 30px 0px;
+  }
+
+}
+
+
+.container-banner-course{
+  background: var(--blue-700);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.container-banner-course:before {
+  content: "";
+  width: 55%;
+  height: 150%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+  -webkit-transform: skew(-30deg,0deg);
+  transform: skew(-30deg,0deg);
+  background: -webkit-linear-gradient(217deg,#fff 5%,hsla(0,0%,100%,.01) 95%);
+  background: linear-gradient(233deg,#fff 5%,hsla(0,0%,100%,.01) 95%);
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+}
+
+.person {
+  position: relative;
+  width: 60%;
+  height: auto;
+
+
+  .background-person {
+    width: 600px;
+    height: 600px;
+    background-color: #77ffad;
+    border-radius: 600px;
+    position: absolute;
+  }
+
+  .person-img {
+    position: absolute;
+
+  }
+
+  .person-img img {}
+
+  .card-radius {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: #62bdff;
+    margin: 0px;
+    padding: 20px;
+    position: absolute;
+    left: 42px;
+    top: 60px;
+  }
+
+  .card-radius img {
+    width: 60px;
+  }
+
+  .container-card-tech {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    position: absolute;
+    left: 452px;
+    top: 160px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 5%), 0px 0px 2px rgb(0 0 0 / 16%), 0px 2px 6px rgb(0 0 0 / 5%) !important;
+
+    .card-tehc {
+      padding: 10px;
+    }
+
+    .card-tehc img {
+      width: 70px;
+    }
+
+    .card-tehc-text {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+    }
+
+    .text-test {
+      color: #252525;
+      font-size: 25px;
+      font-weight: 900;
+      line-height: 30px;
+    }
+
+    .text-description {
+      text-align: left;
+    }
+
+    // .card-tehc-text h1{
+    //   margin-block-start: 0px;
+    //   margin-block-end: 0px;
+    //   margin-inline-start: 0px;
+    //   margin-inline-end: 0px;
+    //   font-size: 22px;
+    //   font-weight: 500;
+    //   color: #29292b;
+    //   font-family: "roboto";
+    //   line-height: 1.4286
+    // }
+
+  }
+
+  .card-tech-tow {
+    left: -80px;
+    top: 390px;
+  }
+
+}
+
+
+@media  only screen and  (min-width: 200px)  and  (max-width: 922px) {
+
+  .container-banner-course {
+    display: flex;
+    flex-direction: column;
+    height: 1015px;
+
+    .banner-course-text{
+      width: 100%;
+      margin: 10px;
+    }
+
+    .banner-course-image {
+      width: 100%;
+      justify-content: center;
+      display: flex;
+
+    }
+
+    .person {
+      display: flex;
+      justify-content: center;
+    }
+
+    .container-card-tech{
+      left: 268px;
+    }
+
+    .card-tech-tow {
+      left: -80px;
+      top: 390px;
+    }
+  }
+}

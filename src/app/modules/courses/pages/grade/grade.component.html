@@ -1,0 +1,16 @@
+<div class="container-grade">
+    <div class="flex flex-row mt-5 justify-content-center">
+        <div class="container-video">
+            <app-video-player
+            [currentData]="currentData"
+            ></app-video-player>
+        </div>
+
+        <div class="container-list-video">
+            <app-list-video
+            [data]="data"
+            (currentItem)="getCurrentData($event)"
+            ></app-list-video>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,57 @@
+.logo__header {
+  width: 180px;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: #2196f3;
+  display: flex;
+  height: 60px;
+  align-items: center;
+
+  .navbar-item-container {
+    display: flex;
+    flex-direction: row;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      list-style: none;
+
+      li a {
+        color: #fff;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 30px;
+
+        &:hover {
+          color: #052c47;
+          cursor: pointer;
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 30px;
+        }
+      }
+
+
+    }
+  }
+
+}
+
+.button-login {
+  color: #ffffff !important;
+  margin: 0px 10px;
+  padding: 7px 15px;
+  background-color: #3435;
+  height: 45px;
+  margin: auto 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}

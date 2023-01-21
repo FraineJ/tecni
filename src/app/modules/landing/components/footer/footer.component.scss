@@ -1,0 +1,105 @@
+.container-footer {
+  width: 100%;
+  background-color: #052c47;
+  margin-top: auto;
+
+  .footer {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 45px;
+    gap: 30px;
+
+    .footer-logo {
+      .img-footer {
+        margin: 0px;
+        width: 200px;
+        margin-bottom: 20px;
+      }
+
+      .img-footer img {
+        width: 200px;
+      }
+
+      .text-footer-about {
+        color: rgb(206, 204, 204)
+
+      }
+
+      .social_container {
+        background-color: #33374b;
+        padding: 7px;
+        border-radius: 50px;
+        color: #fff;
+      }
+
+
+
+      .social-facebbok :hover {
+        background-color: #1877f2;
+      }
+
+
+      .social-instagram :hover {
+        background: #d6249f;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      }
+
+      .social-youtube :hover {
+        background-color: #ff0000
+      }
+
+      .social_container-tik-tok {
+        background-color: #33374b;
+        padding: 9px;
+        border-radius: 50px;
+        color: #fff;
+        height: 39px;
+        width: 38px;
+
+      }
+
+      .social_tik-tok :hover {
+        background: #d6249f;
+        background: radial-gradient(circle at 30% 107%, #25f4ee 30%, #fe2c55 75%, );
+      }
+
+      .footer__social {
+        font-size: 1.5rem;
+        color: #fff;
+        margin: 0 0.5rem;
+      }
+    }
+
+    .info-footer {
+      color: #FFF;
+      .item-info-footer {
+        padding: 10px 0px;
+      }
+
+      .icon-footer {
+        fill: #FFF;
+      }
+    }
+
+    .suscription-footer {
+
+    }
+  }
+
+}
+
+.copy {
+  color: rgb(146, 146, 146);
+  padding: 10px 0px;
+}
+
+.info-footer-title {
+  font-weight: 500;
+  font-family:  Roboto, "Helvetica Neue", sans-serif;
+  letter-spacing: normal;
+  margin: 0 0 16px;
+  color: #fff;
+  font-size: 25px;
+  margin: 0 0 16px;
+}

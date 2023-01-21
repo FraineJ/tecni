@@ -1,0 +1,27 @@
+<div class="container-viideo-player" >
+    <youtube-player [videoId]="currentData.content[0].id_video" [height]="450" [width]="750"></youtube-player>
+    <h1 class="title-video">{{currentData.content[0].titulo}}</h1>
+
+
+    <div class="container-banner-user">
+        <div  class="flex flex-row">
+            <img  class="logox1"  src="https://images.ecestaticos.com/XpHlnlxZu162wj1Gpt87N8xcW8o=/0x16:987x534/600x315/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F62c%2Fe5d%2F314%2F62ce5d3141c0b670144a692b7f6a21fa.jpg">
+            <div class="container-name-user">
+                <a class="name-user">Nombre de usuario</a>
+                <label class="profetion-user">Ingeniero en sistema</label>
+            </div>
+        </div>
+
+        <div>
+            <button pButton type="button" label="Siguiente" class="p-button-rounded" icon="pi pi-check" iconPos="left"></button>
+        </div>
+    </div>
+
+    <!-- <p-divider></p-divider> -->
+
+    <div class="card">
+        <p-tabMenu [model]="items" [activeItem]="activeItem"></p-tabMenu>
+    </div>
+
+</div>
+

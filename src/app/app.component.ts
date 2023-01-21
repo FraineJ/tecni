@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IVideoConfig } from "ngx-video-list-player";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tecni';
+
+
+
 }

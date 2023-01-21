@@ -1,0 +1,75 @@
+<app-banner-course></app-banner-course>
+<app-card-features></app-card-features>
+<div class="container-ofert">
+  <div class="offer-one bd-container">
+
+    <div class="col-6 md:col-6 sm:col-12 text-center">
+      <img src="https://static.platzi.com/mf-landings/image/comunity_1@2x-41489cceda0735ad88f96509c6058597.png" class="img-iten">
+    </div>
+
+    <div class="col-6 md:col-6 sm:col-12">
+        <div class="mb-5">
+          <h1 class="text-title">Accede a tus cursos 24/7</h1>
+          <p class="text-size-1 text-size-2">aprende a la hora que quieras desde donde tú elijas. ¡Sin horarios!</p>
+        </div>
+
+        <div class="mb-5">
+          <h1 class="text-title">Networking</h1>
+          <p class="text-size-1 text-size-2">conéctate con otros estudiantes y profesores de todo el mundo y ampliar tu red profesional.</p>
+        </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="offer-tow bd-container">
+
+    <div class="col-6 md:col-6 sm:col-12">
+      <div class="mb-5">
+        <h1 class="text-title">Programas y cursos</h1>
+        <p class="text-size-1 text-size-2">encontrara una gran variedad de programas y cursos diseñados para ti.</p>
+      </div>
+
+      <div class="mb-5">
+        <h1 class="text-title">Materiales y recursos</h1>
+        <p class="text-size-1 text-size-2">te ofrecemos acceso a una amplia variedad de materiales y recursos educativos. para que asi lleves tu carrera a otro nivel</p>
+      </div>
+
+    </div>
+
+    <div class="col-6 md:col-6 sm:col-12 text-center">
+      <img src="https://static.platzi.com/mf-landings/image/comunity_1@2x-41489cceda0735ad88f96509c6058597.png" class="img-iten">
+    </div>
+
+
+  </div>
+
+</div>
+<app-list-courses></app-list-courses>
+
+<div class="bd-container">
+
+  <p-divider ></p-divider>
+
+</div>
+
+<div class="container-partners bd-container">
+  <div class="text-center w-full ">
+    <span  class="text-title-black text-indicator">Nuestros aliados</span>
+  </div>
+
+  <p-carousel [value]="product" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+    <ng-template let-product pTemplate="item">
+        <div class="product-item">
+            <div class="product-item-content">
+                <div class="mb-3">
+                    <img src="https://www.drandigital.com/assets/img/clients/client-1.png" [alt]="product.name" class="product-image" />
+                </div>
+            </div>
+        </div>
+    </ng-template>
+  </p-carousel>
+
+</div>
+

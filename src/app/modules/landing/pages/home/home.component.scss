@@ -1,0 +1,47 @@
+
+.container-ofert {
+  background-color: #1769aa;
+
+  .offer-one {
+    display: flex;
+    flex-direction: row ;
+    padding: 35px 0px 5px 0px;
+  }
+
+  .offer-tow {
+    display: flex;
+    flex-direction: row ;
+    padding: 5px 0px 35px 0px;
+  }
+}
+
+
+.container-partners {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 70px 0px;
+
+
+}
+
+.product-item {
+  .product-item-content {
+
+      border-radius: 3px;
+      margin: .3rem;
+      text-align: center;
+      padding: 2rem 0;
+  }
+
+  .product-image {
+    width: 50%;
+  }
+}
+
+.p-carousel .p-carousel-indicators {
+  display: none !important;
+}
+
+.img-iten {
+  width: inherit;
+}
